@@ -3,8 +3,6 @@
 const gulp = require('gulp');
 const config = require('./config.json');
 
-const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
-
 const _task = require('./gulp/func/_lazy');
 
 _task('styles', config);
