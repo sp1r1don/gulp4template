@@ -1,0 +1,17 @@
+{
+  "stylusPath":"./frontend/stylus",
+  "jsPath":"./frontend/js",
+  "cssPath":"./frontend/assets/css",
+  "pugPath":"./frontend/pug",
+  "imgPath":"./frontend/assets/images",
+  "fontPath":"./frontend/assets/fonts",
+  "outPath":"./public",
+  "pugPubPath":"./public/pages",
+  "imgPubPath":"./public/images",
+  "jsPubPath":"./public/js",
+  "cssPubPath":"./public/css",
+  "fontPubPath":"./public/fonts",
+  "taskPath":"./gulp/tasks",
+  "svgPath":"./frontend/assets/images/svg",
+  "svgPubPath":"./public/images/svg"
+}

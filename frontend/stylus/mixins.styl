@@ -1,0 +1,33 @@
+//FONTS
+font-url(file)
+	return '/fonts/' + file
+
+webfont(family, file, weight, style)
+	@font-face
+		font-family family
+		src url(font-url(file + '.eot'))
+		src url(font-url(file + '.eot?#iefix')) format('embedded-opentype'),
+			url(font-url(file + '.woff')) format('woff'),
+			url(font-url(file + '.ttf')) format('truetype'),
+			url(font-url(file + '.svg#'+ family)) format('svg')
+		font-weight weight
+		font-style style
+// Fonts mixin end
+// Fonts require
+// webfont('Font-family', 'File-name', bold, normal)
+
+
+//Aspect-ratio
+aspect-ratio($width, $height)
+	position: relative
+	&:before
+		display: block
+		content: " "
+		width: 100%
+		padding-top: ($height / $width * 100%)
+	> .content-ratio
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0

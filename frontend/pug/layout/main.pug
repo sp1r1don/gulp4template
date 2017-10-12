@@ -1,0 +1,25 @@
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+
+		//- favicon block start
+		//- favicon block end
+
+		link(rel="stylesheet" type='text/css' href="css/normalize.css")
+		link(rel="stylesheet" type='text/css' href="css/libs.css")
+		link(rel="stylesheet" type='text/css' href="template_styles.css")
+
+		body
+			.wrapper
+				include ../modules/header
+				block content
+				include ../modules/footer
+			script(src="js/jquery-3.2.1.min.js")
+			script(src="js/libs.min.js")
+			script(src="js/main.js")
+			block script
